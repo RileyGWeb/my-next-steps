@@ -10,7 +10,8 @@
         "filament/filament": "^3.3",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "livewire/livewire": "^3.6"
+        "livewire/livewire": "^3.6",
+        "rileygweb/visualbuilder": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -74,5 +75,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:RileyGWeb/VisualBuilder.git"
+        }
+    ]
 }
