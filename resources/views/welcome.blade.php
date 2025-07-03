@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>My Next Step</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -19,43 +19,313 @@
             </style>
         @endif
     </head>
-    <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
-        <header class="w-full lg:max-w-4xl max-w-[335px] text-sm mb-6 not-has-[nav]:hidden">
-            @if (Route::has('login'))
-                <nav class="flex items-center justify-end gap-4">
-                    @auth
-                        <a
-                            href="{{ url('/dashboard') }}"
-                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal"
-                        >
-                            Dashboard
-                        </a>
-                    @else
-                        <a
-                            href="{{ route('login') }}"
-                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
-                        >
-                            Log in
-                        </a>
-
-                        @if (Route::has('register'))
-                            <a
-                                href="{{ route('register') }}"
-                                class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
-                                Register
-                            </a>
-                        @endif
-                    @endauth
-                </nav>
-            @endif
+    <body class="bg-white text-gray-900 font-sans">
+        <!-- Header -->
+        <header class="bg-white border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-teal-600 rounded mr-2"></div>
+                        <span class="text-xl font-semibold text-teal-600">Next Step</span>
+                    </div>
+                    <button class="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition">
+                        Find My Next Step
+                    </button>
+                </div>
+            </div>
         </header>
-        <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
 
-            <h1>My next steps!!!!</h1>
-        </div>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-teal-600 to-teal-700 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+                            Discover your next step with Jesus
+                        </h1>
+                        <p class="text-xl mb-8 text-teal-100">
+                            A simple, step-by-step process to help you take the next step in your journey with Jesus.
+                        </p>
+                        <button class="bg-white text-teal-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-50 transition">
+                            FIND MY NEXT STEP →
+                        </button>
+                    </div>
+                    <div class="bg-gray-300 h-80 rounded-lg flex items-center justify-center text-gray-600">
+                        [Hero Image Placeholder]
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        @if (Route::has('login'))
-            <div class="h-14.5 hidden lg:block"></div>
-        @endif
+        <!-- What is my next step Section -->
+        <section class="py-16 lg:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl lg:text-4xl font-bold mb-6">What is my next step?</h2>
+                        <p class="text-lg text-gray-600 mb-8">
+                            My Next Step is a resource dedicated to guiding Christians in their personal spiritual journey. Using a comprehensive assessment, we identify where you are in your walk with Christ and provide guidance on achieving the next milestone in your relationship with God.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-8">
+                            My Next Step offers a clear and supportive pathway for help you:
+                        </p>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-teal-600 rounded mr-3 flex-shrink-0"></div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">Complete our FREE Spiritual Assessment</h3>
+                                    <p class="text-gray-600">discover your spiritual gifts</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-teal-600 rounded mr-3 flex-shrink-0"></div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">Identify your unique spiritual gifts</h3>
+                                    <p class="text-gray-600">areas of excellence</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-teal-600 rounded mr-3 flex-shrink-0"></div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">Connect with influential leaders and guides</h3>
+                                    <p class="text-gray-600">recommended by Jesus</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-teal-600 rounded mr-3 flex-shrink-0"></div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">Discover personal opportunities</h3>
+                                    <p class="text-gray-600">in your spiritual journey</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="text-lg text-gray-600 mt-8 mb-8">
+                            You won't struggle to take any direction with personal, next step, and provide the encouragement and tools you need to take a vital...
+                        </p>
+                        
+                        <button class="bg-teal-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-teal-700 transition">
+                            FIND MY NEXT STEP →
+                        </button>
+                    </div>
+                    <div class="bg-gray-300 h-96 rounded-lg flex items-center justify-center text-gray-600">
+                        [Section Image Placeholder]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-16 lg:py-24 bg-indigo-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold">How It Works</h2>
+                </div>
+                
+                <div class="space-y-12">
+                    <div class="flex items-start">
+                        <div class="text-6xl font-bold text-yellow-400 mr-8">1</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Begin your journey</h3>
+                            <p class="text-indigo-200 text-lg">
+                                Start by exploring a few focused, free online you to start your programs and receive all the features of My Next Step.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="text-6xl font-bold text-yellow-400 mr-8">2</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Initial Assessment</h3>
+                            <p class="text-indigo-200 text-lg">
+                                Take a short online questionnaire that focuses assessment based you reflect on your current spiritual condition and let you to understand your spiritual progress and recommend...
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="text-6xl font-bold text-yellow-400 mr-8">3</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Discover your gifts</h3>
+                            <p class="text-indigo-200 text-lg">
+                                Receive your personalized assessment results that recommends for optimizing your personal spiritual gifts. By responding to 9 series of assessment, we will clarify your natural spiritual gifts that match your personality, abilities and the church.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="text-6xl font-bold text-yellow-400 mr-8">4</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Understand yourself better</h3>
+                            <p class="text-indigo-200 text-lg">
+                                We encourage the in-depth spiritual personality assessment. These tools will provide a deeper understanding of your spiritual abilities and strengths lead where your personality variables your...
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="text-6xl font-bold text-yellow-400 mr-8">5</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Connect and grow</h3>
+                            <p class="text-indigo-200 text-lg">
+                                Receive your completed results to overcome your be encouraged best times. Our next step journey will deliver your recommended your personal next step resource recommendations, plans and tools and resources to support your key step in your spirituality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Use My Next Step Section -->
+        <section class="py-16 lg:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold">Why Use <span class="text-teal-600">My Next Step</span>?</h2>
+                    <p class="text-lg text-gray-600 mt-4">
+                        Streamlining your My Next Step journey offers several key advantages to you want to grow in your faith.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-white rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">GAIN CLARITY</h3>
+                        <p class="text-gray-600">
+                            Gain clarity about where you are in your spiritual journey and what step to take next.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-white rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">IDENTIFY YOUR SPIRITUAL GIFTS</h3>
+                        <p class="text-gray-600">
+                            Discover how the ways God has designed you to serve effectively.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-white rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">DISCOVER YOUR UNIQUE DESIGN</h3>
+                        <p class="text-gray-600">
+                            Learn your personality strengths from what, enabling the deepest, most personal meaning for yourself.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-white rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">ACCESS VALUABLE RESOURCES</h3>
+                        <p class="text-gray-600">
+                            Benefit from a curated library of guides, books, and learning that match your specific spiritual growth plan.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-white rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">CONNECT WITH OTHERS</h3>
+                        <p class="text-gray-600">
+                            Receive recommended support from like-minded communities and find groups for networking and growth.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-white rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">FIND MEANINGFUL WAYS TO SERVE</h3>
+                        <p class="text-gray-600">
+                            Connect your spiritual gifts and community insights to impact serving your neighbors, both locally and globally.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who Should Use This Service Section -->
+        <section class="py-16 lg:py-24 bg-teal-600 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold">Who Should Use This Service?</h2>
+                    <p class="text-teal-100 text-lg mt-4">
+                        My Next Step is designed to help Christians at all stages of their spiritual journey. This includes:
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-teal-600 rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Those Exploring the Faith</h3>
+                        <p class="text-teal-100">
+                            Individuals who are curious about Christianity and have questions about Jesus and Christianity.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-teal-600 rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">New Believers</h3>
+                        <p class="text-teal-100">
+                            People who have recently come to Christ and are seeking guidance about their new faith.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-teal-600 rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Long-Time Christians</h3>
+                        <p class="text-teal-100">
+                            Established believers who want a structured approach for continued spiritual growth and development.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-teal-600 rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Individuals Seeking Connection</h3>
+                        <p class="text-teal-100">
+                            Those seeking to connect with other believers or looking to engage in community or church membership.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-teal-600 rounded"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Anyone Desiring Growth</h3>
+                        <p class="text-teal-100">
+                            Christians of any life stage seeking to deepen their relationship with Jesus, expanding their faith.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <button class="bg-white text-teal-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-50 transition">
+                        FIND MY NEXT STEP →
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p>&copy; 2024 White Stone Church | All Rights Reserved</p>
+            </div>
+        </footer>
     </body>
 </html>
