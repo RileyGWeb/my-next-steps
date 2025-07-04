@@ -78,8 +78,9 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "vcs",
-            "url": "git@github.com:RileyGWeb/VisualBuilder.git"
+            "type": "path",
+            "url": "../../personal/VisualBuilder",
+            "options": { "symlink": true }
         }
     ]
 }
